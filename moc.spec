@@ -1,10 +1,10 @@
-%define version 2.4.0
-%define release %mkrel 2
+%define version 2.4.1
+%define rel 1
 
 Summary: Simple console audio player
 Name: moc
 Version: %{version}
-Release: %{release}
+Release: %mkrel %{rel}
 URL: http://moc.daper.net/
 Source0: ftp://ftp.daper.net/pub/soft/%{name}/stable/%{name}-%{version}.tar.bz2
 License: GPL
