@@ -1,4 +1,4 @@
-%define version 2.4.1
+%define version 2.4.2
 %define rel 1
 
 Summary: Simple console audio player
@@ -57,5 +57,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*/*
 %{_libdir}/%{name}/
 %{_datadir}/%{name}/
-
-
