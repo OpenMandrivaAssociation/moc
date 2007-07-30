@@ -1,4 +1,4 @@
-%define version 2.4.2
+%define version 2.4.3
 %define rel 1
 
 Summary: Simple console audio player
