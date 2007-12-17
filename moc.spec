@@ -15,7 +15,6 @@ BuildRequires: libalsa-devel
 # do not compile
 #BuildRequires: libflac-devel 
 BuildRequires: libid3tag-devel taglib-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 MOC is a console audio player with ncurses interface
