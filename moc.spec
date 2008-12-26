@@ -1,5 +1,5 @@
 %define version 2.4.3
-%define rel 1
+%define rel 2
 
 Summary: Simple console audio player
 Name: moc
@@ -7,6 +7,7 @@ Version: %{version}
 Release: %mkrel %{rel}
 URL: http://moc.daper.net/
 Source0: ftp://ftp.daper.net/pub/soft/%{name}/stable/%{name}-%{version}.tar.bz2
+Patch0: moc-2.4.3-layout-1-is-malformed-fix.patch
 License: GPL
 Group: Sound
 BuildRequires: ncurses-devel mad-devel curl-devel
@@ -34,6 +35,7 @@ Features:
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure
