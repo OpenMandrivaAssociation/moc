@@ -1,5 +1,7 @@
-%define version 2.4.3
-%define rel 2
+%define _disable_ld_no_undefined 1
+
+%define version 2.4.4
+%define rel 1
 
 Summary: Simple console audio player
 Name: moc
@@ -13,9 +15,9 @@ License: GPL
 Group: Sound
 BuildRequires: ncurses-devel mad-devel curl-devel
 BuildRequires: speex-devel oggvorbis-devel libmpcdec-devel
-BuildRequires: libalsa-devel 
+BuildRequires: libalsa-devel
 # do not compile
-#BuildRequires: libflac-devel 
+#BuildRequires: libflac-devel
 BuildRequires: libid3tag-devel taglib-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -36,7 +38,7 @@ Features:
 
 %prep
 %setup -q
-%patch0 -p0
+#%patch0 -p0
 %patch1 -p0
 
 %build
@@ -56,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc COPYING AUTHORS NEWS README TODO
-%doc config.example keymap.example 
+%doc config.example keymap.example
 %{_bindir}/mocp
 %{_mandir}/*/*
 %{_libdir}/%{name}/
