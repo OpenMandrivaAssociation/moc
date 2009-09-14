@@ -1,7 +1,7 @@
 %define _disable_ld_no_undefined 1
 
 %define version 2.4.4
-%define rel 1
+%define rel 2
 
 Summary: Simple console audio player
 Name: moc
