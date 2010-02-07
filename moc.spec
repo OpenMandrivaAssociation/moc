@@ -1,7 +1,7 @@
 %define _disable_ld_no_undefined 1
 
 %define version 2.4.4
-%define rel 3
+%define rel 4
 
 Summary: Simple console audio player
 Name: moc
@@ -13,12 +13,19 @@ Patch0: moc-2.4.3-layout-1-is-malformed-fix.patch
 Patch1: moc-2.4.3-fix-str-fmt.patch
 License: GPL
 Group: Sound
-BuildRequires: ncurses-devel mad-devel curl-devel
-BuildRequires: speex-devel oggvorbis-devel libmpcdec-devel
+BuildRequires: ncursesw-devel
+BuildRequires: mad-devel
+BuildRequires: curl-devel
+BuildRequires: speex-devel
+BuildRequires: oggvorbis-devel
+BuildRequires: libmpcdec-devel
 BuildRequires: libalsa-devel
-# do not compile
-#BuildRequires: libflac-devel
-BuildRequires: libid3tag-devel taglib-devel
+BuildRequires: libflac-devel
+BuildRequires: sndfile-devel
+BuildRequires: ffmpeg-devel
+BuildRequires: libsamplerate-devel
+BuildRequires: id3tag-devel
+BuildRequires: taglib-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
