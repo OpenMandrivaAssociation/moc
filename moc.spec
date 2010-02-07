@@ -49,8 +49,9 @@ Features:
 %patch1 -p0
 
 %build
+export CFLAGS="%{optflags} `pkg-config --cflags ncursesw`"
 %configure2_5x
-make
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
