@@ -10,7 +10,7 @@ Release: %mkrel %{rel}
 URL: http://moc.daper.net/
 Source0: ftp://ftp.daper.net/pub/soft/%{name}/stable/%{name}-%{version}.tar.bz2
 Patch1: moc-2.4.3-fix-str-fmt.patch
-License: GPL
+License: GPLv2+
 Group: Sound
 BuildRequires: ncursesw-devel
 BuildRequires: mad-devel
