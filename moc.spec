@@ -32,7 +32,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 MOC is a console audio player with ncurses interface
 Features:
 
-        * Supports MP3, WAV, and OGG formats.
+        * Supports MP3, WAV, FLAC, and OGG formats.
         * Play files from directory changing automatically to the next one
           without any playlist.
         * Supports id3tag, VBR and Xing header for MP3.
