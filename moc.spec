@@ -3,7 +3,7 @@
 Summary:	Simple console audio player
 Name:		moc
 Version:	2.4.4
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPLv2+
 Group:		Sound
 URL:		http://moc.daper.net/
