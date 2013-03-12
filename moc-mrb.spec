@@ -5,7 +5,7 @@
 Summary:	Simple console audio player
 Name:		moc
 Version:	2.5.0
-Release:	0.%{pre}.1
+Release:	0.%{pre}.2
 Epoch:		1
 License:	GPLv2+
 Group:		Sound
