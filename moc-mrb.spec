@@ -5,7 +5,7 @@
 Summary:	Simple console audio player
 Name:		moc
 Version:	2.5.0
-Release:	0.%{pre}.2
+Release:	0.%{pre}.3
 Epoch:		1
 License:	GPLv2+
 Group:		Sound
@@ -20,7 +20,7 @@ BuildRequires:	libmpcdec-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(sndfile)
-BuildRequires:	ffmpeg-devel
+BuildRequires:	ffmpeg-devel >= 2.5.4
 BuildRequires:	libfaac-devel
 BuildRequires:	pkgconfig(samplerate)
 BuildRequires:	pkgconfig(id3tag)
