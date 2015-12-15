@@ -11,7 +11,7 @@ License:	GPLv2+
 Group:		Sound
 URL:		http://moc.daper.net/
 Source0:	ftp://ftp.daper.net/pub/soft/moc/unstable/%{name}-%{version}_%{pre}.tar.gz
-BuildRequires:	pkgconfig(ncurses++w)
+BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(mad)
 BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(speex)
