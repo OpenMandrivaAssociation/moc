@@ -5,7 +5,7 @@
 Summary:	Simple console audio player
 Name:		moc
 Version:	2.5.0
-Release:	0.%{pre}.2
+Release:	0.%{pre}.3
 Epoch:		1
 License:	GPLv2+
 Group:		Sound
@@ -55,7 +55,7 @@ Features:
 export CFLAGS="%{optflags} `pkg-config --cflags ncursesw`"
 autoreconf -i
 
-%configure2_5x 
+%configure
 %make
 
 %install
@@ -70,4 +70,3 @@ rm -rf %{buildroot}/%{_libdir}/*/*/*la
 %{_mandir}/*/*
 %{_libdir}/%{name}
 %{_datadir}/%{name}
-
