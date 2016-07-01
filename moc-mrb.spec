@@ -1,16 +1,15 @@
 %define _disable_ld_no_undefined 1
-
-%define pre alfa4_svn2454
+%define _disable_lto 1
 
 Summary:	Simple console audio player
 Name:		moc
-Version:	2.5.0
-Release:	0.%{pre}.3
+Version:	2.5.1
+Release:	1
 Epoch:		1
 License:	GPLv2+
 Group:		Sound
 URL:		http://moc.daper.net/
-Source0:	ftp://ftp.daper.net/pub/soft/moc/unstable/%{name}-%{version}_%{pre}.tar.gz
+Source0:	http://ftp.daper.net/pub/soft/moc/stable/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(mad)
 BuildRequires:	pkgconfig(libcurl)
@@ -49,11 +48,10 @@ Features:
   * Playing in separate thread.
 
 %prep
-%setup -q -n trunk
+%setup -q
 
 %build
 export CFLAGS="%{optflags} `pkg-config --cflags ncursesw`"
-autoreconf -i
 
 %configure
 %make
