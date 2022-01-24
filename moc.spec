@@ -19,7 +19,7 @@ BuildRequires:	libmpcdec-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(sndfile)
-BuildRequires:	ffmpeg-devel
+BuildRequires:	ffmpeg4-devel
 BuildRequires:	faac-devel
 BuildRequires:	pkgconfig(samplerate)
 BuildRequires:	pkgconfig(id3tag)
