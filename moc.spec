@@ -3,7 +3,7 @@
 
 Summary:	Simple console audio player
 Name:		moc
-Version:	2.5.1
+Version:	2.5.2
 Release:	1
 Epoch:		1
 License:	GPLv2+
@@ -19,8 +19,8 @@ BuildRequires:	libmpcdec-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(sndfile)
-BuildRequires:	ffmpeg-devel
-BuildRequires:	libfaac-devel
+BuildRequires:	ffmpeg4-devel
+BuildRequires:	faac-devel
 BuildRequires:	pkgconfig(samplerate)
 BuildRequires:	pkgconfig(id3tag)
 BuildRequires:	pkgconfig(taglib)
@@ -54,10 +54,10 @@ Features:
 export CFLAGS="%{optflags} `pkg-config --cflags ncursesw`"
 
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 rm -rf %{buildroot}/usr/share/doc/
 rm -rf %{buildroot}/%{_libdir}/*/*/*la
 
