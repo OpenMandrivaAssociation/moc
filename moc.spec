@@ -15,11 +15,10 @@ BuildRequires:	pkgconfig(mad)
 BuildRequires:	pkgconfig(libcurl)
 BuildRequires:	pkgconfig(speex)
 BuildRequires:	pkgconfig(vorbis)
-BuildRequires:	libmpcdec-devel
+BuildRequires:	libmpc-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(sndfile)
-BuildRequires:	ffmpeg4-devel
 BuildRequires:	faac-devel
 BuildRequires:	pkgconfig(samplerate)
 BuildRequires:	pkgconfig(id3tag)
@@ -32,6 +31,7 @@ BuildRequires:	magic-devel
 BuildRequires:	pkgconfig(libmodplug)
 BuildRequires:	gettext-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	pkgconfig(popt)
 
 %description
 MOC is a console audio player with ncurses interface
@@ -53,7 +53,9 @@ Features:
 %build
 export CFLAGS="%{optflags} `pkg-config --cflags ncursesw`"
 
-%configure
+# --without-ffmpeg because ffmpeg 5.x isn't supported
+%configure \
+	--without-ffmpeg
 %make_build
 
 %install
