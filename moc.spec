@@ -32,6 +32,7 @@ BuildRequires:	pkgconfig(libmodplug)
 BuildRequires:	gettext-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	pkgconfig(popt)
+BuildRequires:	locales-extra-charsets
 
 %description
 MOC is a console audio player with ncurses interface
