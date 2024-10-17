@@ -8,7 +8,7 @@ Release:	2
 Epoch:		1
 License:	GPLv2+
 Group:		Sound
-URL:		http://moc.daper.net/
+URL:		https://moc.daper.net/
 Source0:	http://ftp.daper.net/pub/soft/moc/stable/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(mad)
