@@ -1,6 +1,8 @@
 %define _disable_ld_no_undefined 1
 %define _disable_lto 1
 
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 Summary:	Simple console audio player
 Name:		moc
 Version:	2.5.2
