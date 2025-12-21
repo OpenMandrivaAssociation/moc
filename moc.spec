@@ -12,6 +12,11 @@ License:	GPLv2+
 Group:		Sound
 URL:		https://moc.daper.net/
 Source0:	http://ftp.daper.net/pub/soft/moc/stable/%{name}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(ncursesw)
 BuildRequires:	pkgconfig(mad)
 BuildRequires:	pkgconfig(libcurl)
